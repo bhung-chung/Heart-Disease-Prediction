@@ -1,3 +1,9 @@
+<div align="center">
+  <b>Personal Portfolio:</b>
+  <a href="https://github.com/bhung-chung/Bangla-Fake-News-Detection">Bangla Fake News Detection</a> |
+  <a href="https://github.com/bhung-chung/Drone-Object-Detection">Drone Object Detection</a> |
+  <a href="https://github.com/bhung-chung/Heart-Disease-Prediction">Heart Disease Prediction</a>
+</div><br>
 # 🫀 Heart Disease Prediction (ML Zoomcamp Midterm Project)
 
 ## 📌 Project Overview
@@ -68,7 +74,7 @@ notebooks/02_models.ipynb
 and exported to:
 
 ```text
-scripts/train.py
+src/train.py
 ```
 
 Models trained and evaluated:
@@ -94,7 +100,7 @@ This file is created by running the training script.
 **Script:**
 
 ```text
-scripts/train.py
+src/train.py
 ```
 
 What it does:
@@ -109,7 +115,7 @@ What it does:
 Run it with:
 
 ```bash
-python scripts/train.py
+python src/train.py
 ```
 
 ---
@@ -119,7 +125,7 @@ python scripts/train.py
 **File:**
 
 ```text
-web/service.py
+app/service.py
 ```
 
 This script:
@@ -131,7 +137,7 @@ This script:
 Run the service locally:
 
 ```bash
-python web/service.py
+python app/service.py
 ```
 
 The service will listen on:
@@ -167,13 +173,13 @@ Example input JSON:
 **File:**
 
 ```text
-web/client.py
+app/client.py
 ```
 
 This small script sends a test request to the API to verify it is working:
 
 ```bash
-python web/client.py
+python app/client.py
 ```
 
 ---
@@ -207,7 +213,7 @@ http://127.0.0.1:9696/predict
 From your host machine (in a new terminal), run the client script:
 
 ```bash
-python web/client.py
+python app/client.py
 ```
 
 ---
@@ -239,9 +245,9 @@ pip install -r requirements.txt
 ├── notebooks/
 │   ├── 01_eda.ipynb
 │   └── 02_models.ipynb
-├── scripts/
+├── src/
 │   └── train.py
-├── web/
+├── app/
 │   ├── service.py
 │   └── client.py
 ├── Dockerfile
@@ -301,7 +307,7 @@ These were used to deploy the model:
 | ------------- | --------------------------------- |
 | Runtime       | Python                            |
 | Build Command | `pip install -r requirements.txt` |
-| Start Command | `python web/service.py`           |
+| Start Command | `python app/service.py`           |
 | Plan          | Free                              |
 
 5. Render automatically built and launched the service.
@@ -310,7 +316,7 @@ These were used to deploy the model:
 
 ## 🧪 Testing the Deployed API
 
-Update `web/client.py`:
+Update `app/client.py`:
 
 ```python
 url = "https://heart-service.onrender.com/predict"
@@ -319,7 +325,7 @@ url = "https://heart-service.onrender.com/predict"
 Run:
 
 ```bash
-python web/client.py
+python app/client.py
 ```
 
 Example output:
@@ -351,10 +357,12 @@ Shows:
 Output of:
 
 ```bash
-python web/client.py
+python app/client.py
 ```
 
 <img width="1320" height="94" alt="image" src="https://github.com/user-attachments/assets/aff17c69-4c18-47ae-9241-2dfc0ecd0835" />
+
+
 
 
 
