@@ -320,7 +320,7 @@ These were used to deploy the model:
 Update `app/client.py`:
 
 ```python
-url = "https://heart-service.onrender.com/predict"
+url = "https://heart-service-7kqp.onrender.com/predict"
 ```
 
 Run:
