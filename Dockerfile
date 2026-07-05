@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 9696
 
 # Start the Flask web service
-CMD ["python", "web/service.py"]
+CMD ["python", "app/service.py"]
